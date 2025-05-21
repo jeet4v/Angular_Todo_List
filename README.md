@@ -18,6 +18,10 @@ git remote add origin https://github.com/jeet4v/Angular_Todo_List.git
 git branch -M main
 git push -u origin main
 
+### Push the changes from the command line
+git add .
+git commit -m "commiting the changes"
+git push
 
 ## ng build
 
