@@ -1,0 +1,12 @@
+.library-book{ 
+    background: #ace6b4;
+    padding: 5px;
+    margin: 5px;
+    width: 110px;
+}
+
+.single-book{
+    width: 100px;
+    height: 100px;
+    background: #e072bf;
+}

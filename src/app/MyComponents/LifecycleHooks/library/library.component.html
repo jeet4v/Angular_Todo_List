@@ -1,0 +1,29 @@
+<div class="library-parent">
+
+    <h2>Book Library System to demonstrate Angular Lifecycle Hooks.</h2>
+    <h6>Monitor the console logs . . . </h6>
+    <br>
+    <hr>
+    <button class="btnBook" (click)="RemoveBookConditional()">Increase Counter</button>
+    <button class="btnBook" (click)="ResetCounter()">Reset Counter</button>
+    <h3>Counter: {{TotalBooks}}</h3>
+    <h5>Add/Remove book when counter value is 0, 1 & 5</h5>
+    <br>
+    <hr>
+    <div *ngIf="TotalBooks < 1">
+        <app-library-book></app-library-book>
+    </div>
+
+    <div *ngIf="TotalBooks >= 5">
+        <app-library-book [BookName]="'Book Name 5'"></app-library-book>
+    </div>
+
+    <!-- <h3>Total Books: {{TotalBooks}}</h3>
+    <button class="btnBook" (click)="AddBook()">Add Book</button>
+    <button class="btnBook" (click)="RemoveBook()">Remove All Books</button> -->
+
+    <!-- <br> <hr>
+    <div>
+        <ng-container #BookContainer></ng-container>
+    </div> -->
+</div>
